@@ -5,7 +5,7 @@ interface UserCardProps {
   user: UserProps;
 }
 
-const UserCard: React.FC<UserCardProps> = ({ user }) => {
+const UserCard = ({ user }: UserCardProps): JSX.Element => {
   return (
     <div className="border rounded p-4 shadow-md w-full max-w-md bg-white">
       <h2 className="text-xl font-bold">{user.name}</h2>
